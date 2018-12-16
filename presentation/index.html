@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Introduction to Godot</title>
+
+    <meta name="description" content="impressss" />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link
+      href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic"
+      rel="stylesheet"
+    />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  </head>
+
+  <body class="impress-not-supported">
+    <div class="fallback-message">
+      <p>
+        Your browser <b>doesn't support the features required</b> by impress.js,
+        so you are presented with a simplified version of this presentation.
+      </p>
+      <p>
+        For the best experience please use the latest <b>Chrome</b>,
+        <b>Safari</b> or <b>Firefox</b> browser.
+      </p>
+    </div>
+
+    <div id="impress">
+      <div id="bored" class="step slide" data-x="-7000" data-y="-1500">
+        <div style="text-align: center;">
+          <q><strong>Introduction Godot Engine</strong></q
+          ><br /><br />
+          <h5>Farzam Ramazi</h5>
+          <h5>Yazdan Mohammadi</h5>
+          <h5>IAUCTB</h5>
+          <h5>Dec 17, 2018</h5>
+        </div>
+        <p style="text-align:center; padding-top:60px">
+          <img src="pic/Godot_logo.png" width="20%" />
+        </p>
+      </div>
+
+      <div class="step slide" data-x="-6000" data-y="-1500">
+        <p id="title-page">Overview</p>
+        <div class="item-page">
+          <br />
+          <ul>
+            <li>. Game Engine!?</li>
+            <li>. Demo</li>
+            <li>. About Godot Engine</li>
+            <li>. Pros and Cons</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step slide" data-x="-5000" data-y="-1500">
+        <p id="title-page">Game Engine</p>
+        <div class="item-page">
+          <br />
+          <ul>
+            <li>
+              . Set of common tools, so that users can focus on making games
+              without having to reinvent the wheel.
+            </li>
+            <li>
+              . Make development easier by taking care of all the low level
+              details
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step slide" data-x="-5000" data-y="-750">
+        <p style="text-align:center; padding-top:60px">
+          <img src="pic/game_engine.png" width="100%" />
+        </p>
+      </div>
+
+      <div class="step slide" data-x="-4000" data-y="-1500">
+        <p id="title-page">3D Demo</p>
+        <video width="800" height="600" controls>
+          <source src="pic/3d_demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="step slide" data-x="-3000" data-y="-1500">
+        <p id="title-page">2D Demo</p>
+        <video width="800" height="600" controls>
+          <source src="pic/2d_demo.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="step slide" data-x="-2000" data-y="-1500">
+        <p id="title-page">About Godot</p>
+        <div class="item-page">
+          <br />
+          <ul>
+            <li>
+              . Godot Engine, the free and open source community-driven 2D and
+              3D game engine!
+            </li>
+            <li>. Cross platform: GNU/Linux, Mac, BSD, Windows,...</li>
+            <li>. Exports avaliabel for PC, Mobile, Web*, VR</li>
+            <li>
+              . Consoles Supported but you need obtain kit from manufacturers
+            </li>
+            <li>. MIT license</li>
+            <li>. 18K STAR..3K FORK..753 CONTRIBUTORS on github</li>
+            <li>. 8.8K$ a month on pateron</li>
+            <li>. Latest stable version 3.0.6</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step slide" data-x="-2000" data-y="-750">
+        <div class="item-page">
+          <br />
+          <ul>
+            <li>. Sponserd by Mozilla foundation and Microsoft for C#</li>
+            <li>. It's only 16MB executable file</li>
+            <li>. No installation</li>
+            <li>. For mobile you need to download SDK and template</li>
+            <li>. Support C# and MONO</li>
+          </ul>
+          <p style="text-align:center; padding-top:60px">
+            <img src="pic/Mozilla_logo.png" width="20%" />
+          </p>
+        </div>
+      </div>
+
+      <div class="step slide" data-x="-1000" data-y="-1500">
+        <p id="title-page">Concept</p>
+        <div class="item-page">
+          <br />
+          <ul>
+            <li>. Everything is a Node.</li>
+            <li>. Name, properties, callback, extendable</li>
+            <li>. A group of nodes arranged in a tree is called a Scene.</li>
+            <li>. Godot uses simpler node trees instead</li>
+            <li>. Entire game screen is a node tree</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step slide" data-x="0" data-y="-1500">
+        <p id="title-page">More</p>
+        <br />
+        <div class="item-page">
+          <ul>
+            <li>
+              . No need for other tools beyond used for content creation(art,
+              assets, music etc.)
+            </li>
+            <li>
+              . Architecture is built around concept of a tree of nested scenes
+            </li>
+            <li>
+              . All files(scripts, graphical, assets) are saved as part of
+              computer's file system rather than database this will make it much
+              easier for teams
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step slide" data-x="0" data-y="-750">
+        <br />
+        <div class="item-page">
+          <ul>
+            <li>. Scripting</li>
+            <li>. Code faster with GDScript, VisualScript, ShaderScript</li>
+            <li>
+              . Script editor auto indentation, syntax highlighting and code
+              completion
+            </li>
+            <li>. Also debugger</li>
+            <li>. Rendering OpenGL</li>
+            <li>. Plugins</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step slide" data-x="1000" data-y="-1500">
+        <p id="title-page">Pros and Cons</p>
+        <div class="item-page">
+          <br />
+          <ul>
+            <li>. Good choice for indie games</li>
+            <li>
+              . Because it's open source larger teams can modify and extend
+            </li>
+            <li>. Phaser</li>
+            <li>. Unity</li>
+            <li>. Unreal(epic game)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step slide" data-x="1000" data-y="-750">
+        <div class="item-page">
+          <ul>
+            <li>
+              . We have often said that beginners should start with 2D games,
+              because working in 3D adds yet another layer of complexity. Once
+              you have a strong handle on the 2D fundamentals, it will be much
+              easier to make the step up to 3D
+            </li>
+            <li>
+              . While Unity is technically free, it is commercial software, and
+              you are required to pay for a license if your game makes a certain
+              amount of money.
+            </li>
+            <li>. No enforced programming patterns MVC or ECS</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step slide" data-x="2000" data-y="-1500">
+        <p style="text-align:center; padding-top:60px">
+          <img src="pic/broforce_30_usd.png" width="100%" />
+        </p>
+        <p>30 USD</p>
+      </div>
+      <div class="step slide" data-x="2000" data-y="-750">
+        <p style="text-align:center; padding-top:60px">
+          <img src="pic/shovel_knigh_treasure_trove_19usd.jpg" width="100%" />
+        </p>
+        <p>19 USD</p>
+      </div>
+      <div class="step slide" data-x="2000" data-y="0">
+        <p style="text-align:center; padding-top:60px">
+          <img src="pic/risk_of_rain_17usd.jpg" width="100%" />
+        </p>
+        <p>17 USD</p>
+      </div>
+
+      <div class="step slide" data-x="3000" data-y="-1500">
+        <q> Made with &lt;3 impress </q><br />
+        <p>Godot official docs and github</p>
+        <br />
+        <p>KidsCanCode.org</p>
+        <br />
+      </div>
+    </div>
+    <script>
+      if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML =
+          "<p>Swipe left or right to navigate</p>";
+      }
+    </script>
+
+    <script src="js/impress.js"></script>
+    <script>
+      impress().init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+Game engines are reusable components developers use to build the framework of the game.
+
+This gives them more time to focus on the unique elements like character models, textures, how objects interact, etc.
+
+If everyone made their games from scratch without the help of excellent game engines, games would take longer and be more difficult to make.
+---
+physics
+input
+rendering
+scripting
+collision detection
+AI
+
+---
+Game engines are the way to go to properly develop a game and have full control over it. They do require advanced developers and experience, as they’re highly customizable and the possibilities are endless. However, they save you a lot of time by offering many preset modules, libraries, effects, and tools so that you don’t have to create everything from scratch.
+
+As advanced as they are, it’s fairly easy to pick up knowledge about how to use them over time thanks to extensive documentation, guides, and tutorials available online. However, using a game engine would be a lot harder for a single person to create a decent game on their own, and that’s why it’s probably better suited for teams or large projects.
+
+Below is a comprehensive list of the top game engines in 2017 to choose from based on your needs.
+
+Please note that this is a comparison only for advanced game engines and doesn’t include simple drag and drop game making tools or any other game development tools (graphics, audio, etc.). For a complete game development tools list, you can check out our Must-Have Mobile Game Development Tools In 2017 or our In-Depth Comparison of the Top Game Making Tools of 2017.
+
+----

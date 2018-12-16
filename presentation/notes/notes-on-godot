@@ -1,0 +1,73 @@
+slide one 
+---
+leaving the developer free
+to focus on making the actual game. By “low level details”, we mean things like rendering
+(producing the graphics), animation, collisions and physics, networking, etc. In other words,
+the things you need to make your game, but aren’t the actual game itself.
+
+---
+DL robi from youtube
+2D demo from the godot desktop folder
+
+slide concept
+---
+A node can represent a sprite, an animation, a sound, or just about anything else in your project.
+
+---
+(indie~>independent like MineCraft and World of Goo)
+Pros and cons
+این جوری به نظرم درست نیست که من بگم چی خوبه چی بدم من میام خوبی اینو می‌گم یکی هم که خوبی های یکی دیگرو می‌دونه میاد می‌گه تصمیم نهایی رو شما باید بگیرید
+
+--------------
+https://www.quora.com/Is-Godot-better-than-Unity-for-developing-a-game-What-are-the-pros-and-cons?share=1
+
+----
+Rendering
+
+The graphics engine uses OpenGL ES 3.0 for all supported platforms. 
+The engine supports transparency, normal mapping, specularity, dynamic 
+shadows using shadow maps and full-screen post-processing effects like 
+FXAA, bloom, DOF, HDR, gamma correction and fog. This also supports a 
+simplified shader language that resembles a near subset of GLSL. 
+Shaders can be used for materials and post-processing as well as for 
+2D rendering. The shaders are divided in vertex and fragment sections. 
+There is also the possibility to create shaders by manipulating nodes in a visual editor.
+
+There is also a separate 2D graphics engine, which can operate independently 
+from the 3D one. Examples of 2D engine features includes lights, shadows, shaders, 
+tile sets, parallax scrolling, polygons, animations, physics and particles. 
+It is also possible to mix 2D and 3D using a 'viewport node'.
+
+Other features
+
+Godot contains an animation system with a GUI for editing skeletal animation, blending, animation trees, morphing and realtime cutscenes. Almost any variable defined or created on a game entity can be animated.[11] The engine uses Bullet for 3D physics simulation.[12]
+
+Additional features include:
+
+    Level of detail
+    Performance analysis graphs
+    Light baking
+    Multithreading
+    Plugins system
+    Render targets
+    Video playback using the Theora codec
+    Audio playback of Ogg Vorbis and WAV codecs
+    Particle system
+    Texture import/export/compress pipeline
+    Navmesh support
+    Graphical user interface
+    Keyboard, mouse, gamepad and touchscreen support
+
+---
+
+Plugin
+code eidtor with embedded docs and autocompletion
+Animation editor with 2d rigging
+visual programming for designers
+shader editor both text and graph-based
+
+----
+code faster with
+GDScript python lua
+VisualScript artists and designers in yourteam... graph with nodes(unreal engine)
+ShaderScript to simplify to simplify material... GLSA.. creating 

@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://Player.gd" type="Script" id=1]
+[ext_resource path="res://assets/sullivan.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 16.6263, 19.7183 )
+
+[node name="Player" type="Area2D"]
+
+transform/pos = Vector2( 380.461, 263.305 )
+transform/scale = Vector2( 0.991107, 0.927294 )
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1.88688, 0, 0, 2.06828, 2.87091, 0.818631 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+speed = 400
+
+[node name="sprite" type="Sprite" parent="."]
+
+transform/pos = Vector2( 2.54608, 0.926453 )
+transform/scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( 2.87091, 0.818631 )
+transform/scale = Vector2( 1.88688, 2.06828 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+
